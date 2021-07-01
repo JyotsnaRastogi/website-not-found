@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Website not found</title>
+    </head>
+    <style type="text/css">
+	body {
+            margin: 5px;
+        }
+    .container {
+        text-align: center;
+    }
+	h1 {
+	    font-size: 15px;
+	    text-align: center;
+        }
+    .blur {
+            filter: blur(10px);
+            -webkit-filter: blur(3px);
+        }
+    .blocked-urls {
+        margin: 8px;
+    }
+    </style>
+    <body>
+        <div class="container">
+            <h1>Enter the website you want to block</h1>
+            <input type="text" name="url" id="url"><br>
+            <button id="add-url" style="margin: 5px 12px;">Add</button>
+        </div>
+        <br>
+        <ul class="blocked-urls">
+        </ul>
+    </body>
+    <script src="popup.js"></script>
+</html>

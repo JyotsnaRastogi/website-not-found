@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+ 
+    "name": "Website not found", 
+    "description": "Disallow websites you don't want",
+    "version": "1.0",
+    "author": "Jyotsna Rastogi",
+    "browser_action": {
+        "default_icon": "notallowed.png",
+        "default_popup": "popup.html",
+        "default_title": "Extension to disallow websites"
+    },
+    "background": {
+        "matches": ["<all_urls>"],
+        "scripts": ["background.js"]
+    },
+    "permissions": [
+        "storage",
+        "tabs"
+    ]
+}
